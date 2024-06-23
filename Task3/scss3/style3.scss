@@ -1,0 +1,6 @@
+@for $i from 0 to 5{
+    .button-#{$i + 1}{
+        background-color: red;
+        border-radius: $i * 10%;
+    }
+}

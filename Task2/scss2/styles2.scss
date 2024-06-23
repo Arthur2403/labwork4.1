@@ -1,0 +1,10 @@
+@mixin button($color, $padding){
+    $line-height: 1em;
+    color: $color;
+    padding: $padding, $padding * 2.4;
+    border-radius: calc(($line-height + ($padding * 2)) / 2);
+}
+
+.button{
+    @include button(red, 1.5em)
+}

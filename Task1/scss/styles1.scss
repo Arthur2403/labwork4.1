@@ -1,0 +1,13 @@
+
+@function count($base, $exponenta) {
+    $result: 1;
+  
+    @for $i from 1 through $exponenta {
+      $result: $result * $base;
+    }
+    @return $result;
+}
+
+.text{
+    width: count(2, 7);
+}
